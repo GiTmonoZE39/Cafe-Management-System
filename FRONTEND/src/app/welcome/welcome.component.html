@@ -1,0 +1,92 @@
+
+<!--<div class="body">
+  <br><br><br>
+  <h1 align="center">CAFE | HOME</h1>
+  <br><br>
+
+  <h1>Welcome, {{modelUser.firstname}}</h1>
+  <div class="alert alert-warning" align="center">
+    <strong>User Details</strong>
+  </div>
+
+<table cellpadding="30%" align="center" >
+  <tr>
+    <td>First Name</td>
+    <td>{{modelUser.firstname}}</td>
+  </tr>
+  <tr>
+    <td>Last Name</td>
+    <td>{{modelUser.lastname}}</td>
+  </tr>
+  <tr>
+    <td>Mobile Number</td>
+    <td>{{modelUser.phone}}</td>
+  </tr>
+  <tr>
+    <td>Email Id</td>
+    <td>{{modelUser.email}}</td>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+    <td><button class="bigbutton" routerLink="/home" (click)="clearLocal()"><span>Log Out</span></button></td>
+    <td><button class="bigbutton" routerLink="/menu"><span>Menu</span></button></td>
+
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td> </td>
+
+  </tr>
+</table>
+</div>-->
+<div class="wrapper">
+<div class="body">
+<br><br><br>
+<h1 align="center">myCafe | Home</h1>
+<br><br>
+</div>
+<div class="card align-contents">
+  <p><img class="card-img-top" style="padding: 0 15px; float: left;" src="https://www.pngall.com/wp-content/uploads/2016/05/Customer-High-Quality-PNG.png" alt="Card image cap">
+    <font style="font-size:xxx-large;">Great to have you here, {{modelUser.firstname}}</font><br> 
+    <font style="font: 14px Helvetica, sans-serif;
+    color: rgb(239, 211, 237);
+              font-size: 40px;
+              text-shadow: -1px 5px 0 #111010,
+                            1px 1px 0 #000,
+                           1px -1px 0 #000,
+                          -1px -2px 0 #000;">Brew your Coffee right now!</font></p>
+  <div class="table-responsive panel">
+    <table class="table">
+      <tbody>
+
+      <tr>
+        <td class="text-success" align="right"><i class="fa fa-user"></i> First Name</td>
+        <td>{{modelUser.firstname}}</td>
+      </tr>
+      <tr>
+        <td class="text-success" align="right"><i class="fa fa-user-circle"></i> Last Name</td>
+        <td>{{modelUser.lastname}}</td>
+      </tr>
+      <tr>
+        <td class="text-success" align="right"><i class="fa fa-mobile"></i> Mobile Number</td>
+        <td>{{modelUser.phone}}</td>
+      </tr>
+      <tr>
+        <td class="text-success" align="right"><i class="fa fa-envelope"></i> E-Mail ID</td>
+        <td>{{modelUser.email}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="container" align="center">
+  <button class="bigbutton" routerLink = "/register" (click)="clearLocal()"><span>Become a Merchant!</span></button>
+<button class="bigbutton" routerLink = "/home" (click)="clearLocal()"><span>Sign Out</span></button>
+<button class="bigbutton" routerLink = "/menu"><span>Order</span></button>
+</div>
+</div>

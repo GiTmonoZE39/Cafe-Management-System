@@ -1,0 +1,82 @@
+<div class="wrapper">
+<form (ngSubmit)="onSubmit()">
+  <div class="card align-contents">
+    <p class="top"><img class="card-img-top" style="padding: 10 15px; float: left;" src="https://www.a2ztaxcorp.com/wp-content/uploads/2019/12/Import.png"
+        alt="Card image cap">
+      <font><strong id="main">myCafe Business</strong> 
+        <br> <div id="import">Import new items</div></font>
+    </p>
+    <div class="table-responsive panel">
+      <table class="table">
+        <tbody>
+          <tr>
+            <td></td>
+            <td>
+              <div class="container" style="height: 75px;">
+                <div *ngIf="present==false" class="alert alert-danger alert-box" align="center"
+                  style="width: 60%; margin: auto;">
+                  <strong>Item ID Not Unique!</strong>
+                </div>
+                <div *ngIf="present" class="alert alert-success alert-box" align="center"
+                  style="width: 60%; margin: auto;">
+                  <strong>Item ID Unique</strong>
+                </div>
+              </div>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="text-success" align="right"><i class="fa fa-user"></i> Item ID</td>
+            <td><input class="box" placeholder="Enter a Unique ID" type="text" minlength="3" maxlength="3" [(ngModel)]="newFoodItems.id"
+                name="id" required="required"></td>
+            <td><button style="position: absolute; left: 55%; border-radius: 45px;color:white; background-color:rgb(239, 80, 189)" type="button" (click)="checkAvailability()"><span>Check for
+                  Availability of ID in Database</span></button></td>
+          </tr>
+          <tr>
+            <td class="text-success" align="right"><i class="fa fa-user-circle"></i> Item Name</td>
+            <td><input class="box" placeholder="Item Name" type="text" minlength="2" maxlength="20" [(ngModel)]="newFoodItems.name"
+                name="name" required="required"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="text-success" align="right"><i class="fa fa-mobile"></i> Price (INR)</td>
+            <td><input class="box" placeholder="Price" type="number" name="price" [(ngModel)]="newFoodItems.price"
+                required="required" min="0"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="text-success" align="right"><i class="fa fa-envelope"></i> Available Quantity</td>
+            <td><input class="box" placeholder="Enter Quantity of Item" type="number" name="quantity" required="required"
+                [(ngModel)]="newFoodItems.quantityAvailable" required="required" min="0"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="text-success" align="right"><i class="fa fa-envelope"></i> Item Image</td>
+            <td><input  type="file" (change)="onFileSelected($event)"></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td class="text-success" align="right"><i class="fa fa-envelope"></i> OR</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td class="text-success" align="right"><i class="fa fa-envelope"></i> Item Image URL</td>
+            <td><input type="text" class="box" placeholder="Paste The Url" name="fileDataF" [(ngModel)]="newFoodItems.fileDataF">
+            </td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="container" align="center" style="margin-left: 20%;">
+    <button class="bigbutton" routerLink="/home" (click)="clearLocal()"><span>Home</span></button>
+    <button class="bigbutton" routerLink="/merchantMenu"><span>Check Items Menu</span></button>
+    <button class="bigbutton" type="submit"><span>Submit</span></button>
+  </div>
+</form>
+</div>

@@ -1,0 +1,127 @@
+h1{
+  font: 14px Helvetica, sans-serif;
+    color: rgb(182, 218, 240);
+              font-size: 60px;
+              text-shadow: -1px 10px 0 #111010,
+                            1px 1px 0 #000,
+                           1px -1px 0 #000,
+                          -1px -2px 0 #000;
+}
+#tot{
+  font: 14px Helvetica, sans-serif;
+    color: rgb(220, 220, 239);
+              font-size: 35px;
+              text-shadow: -1px 5px 0 #111010,
+                            1px 1px 0 #000,
+                           1px -1px 0 #000,
+                          -1px -2px 0 #000;
+}
+#am{
+  font: 14px Helvetica, sans-serif;
+    color: rgb(64, 67, 239);
+              font-size: 40px;
+              text-shadow: -1px 5px 0 #111010,
+                            1px 1px 0 #000,
+                           1px -1px 0 #000,
+                          -1px -2px 0 #000;
+}
+
+.body {
+  height: -webkit-fill-available;
+  background-image: url("https://e0.pxfuel.com/wallpapers/281/221/desktop-wallpaper-american-express.jpg");
+  height: 100vh;
+  color: white;
+  font: 14px Helvetica, sans-serif;
+}
+
+label {
+  font: bold 20px Helvetica, sans-serif;
+  display: block;
+  float: left;
+  text-align: right;
+  padding: 5px 10px 0 0;
+  width: 140px;
+}
+
+form div {
+  overflow: hidden;
+  margin: 0 0 5px 0;
+}
+
+
+.bigbutton {
+  border-radius: 4px;
+  background-color: #d95757;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 125px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.bigbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.bigbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.bigbutton:hover span {
+  padding-right: 25px;
+}
+
+.bigbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.question{
+  width: auto;
+  height: 20px;
+}
+
+.blue{
+  border: 2px solid blue;
+  border-radius: 4px;
+}
+.red{
+   border: 2px solid red;
+   border-radius: 4px;
+ }
+
+

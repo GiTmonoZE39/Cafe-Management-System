@@ -1,0 +1,70 @@
+.wrapper{
+  background-image: url("https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") ;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.body1 {
+  
+  color: rgb(158, 237, 237);
+  font: 14px Helvetica, sans-serif;
+}
+
+.bigbutton {
+  border-radius: 4px;
+  background-color: #1e82f4;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.bigbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.bigbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.bigbutton:hover span {
+  padding-right: 25px;
+}
+
+.bigbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#best{
+  color: rgb(170, 250, 9);
+            font-size: 68px;
+            text-shadow: -1px 5px 0 #000,
+                          1px 1px 0 #000,
+                         1px -1px 0 #000,
+                        -1px -2px 0 #000;
+}
+
+#mc{
+  color: rgb(209, 61, 20);
+            font-size: 80px;
+            text-shadow: -1px 5px 0 #000,
+                          1px 1px 0 #000,
+                         1px -1px 0 #000,
+                        -1px -2px 0 #000;
+}
